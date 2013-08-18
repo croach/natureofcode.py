@@ -1,24 +1,23 @@
+"""The Random Walker from The Nature of Code, Introduction (1.2)
+"""
+
+
 from processing import Sketch
 
 from walker import Walker
 
 
-NUMBER_OF_WALKERS = 10000
-
-
 class RandomWalkers(Sketch):
-    width = 1250
-    height = 650
-    frame_rate = 30
+    width = 640
+    height = 360
 
     def setup(self):
-        self.walkers = [Walker(self.width, self.height) for i in range(NUMBER_OF_WALKERS)]
+        self.walker = Walker(self.width, self.height)
 
     def draw(self):
-        for w in self.walkers:
-            w.step()
-            self.fill(w.color)
-            self.point(w.x, w.y)
+        self.walker.step()
+        self.fill(0)
+        self.point(self.walker.x, self.walker.y)
 
 
 if __name__ == '__main__':

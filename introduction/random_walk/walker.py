@@ -1,12 +1,36 @@
+"""The Walker class from The Nature of Code, Introduction (1.2)
+
+TO DO's:
+
+- The HEIGHT and WIDTH variables should be made global somehow. Maybe
+  look into how Flask handles context locals, i.e., global variables
+  that are essentially proxies to the same object in the current
+  active context.
+
+- The display method is missing because functions such as stroke and
+  point are not globaly available.
+
+"""
+
 from random import choice, randint
 
+# TODO: add to the processing library
+def constrain(amt, low, high):
+    """Constrains a value to not exceed a maximum and minimum value.
+    """
+    if amt < low:
+        return low
+    elif amt > high:
+        return high
+    else:
+        return amt
 
 class Walker(object):
     def __init__(self, width, height):
         self.width = width
         self.height = height
-        self.x = randint(0, self.width)
-        self.y = randint(0, self.height)
+        self.x = self.width/2
+        self.y = self.height/2
         self.color = [randint(0, 255), randint(0, 255), randint(0, 255)]
 
     @property
@@ -24,11 +48,5 @@ class Walker(object):
         elif direction == 'backward':
             self.y -= 1
 
-        if self.x > self.width:
-            self.x = self.width
-        elif self.x < 0:
-            self.x = 0
-        if self.y > self.height:
-            self.y = self.height
-        elif self.y < 0:
-            self.y = 0
+        self.x = constrain(self.x, 0, self.width-1)
+        self.y = constrain(self.y, 0, self.height-1)
