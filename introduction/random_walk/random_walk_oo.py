@@ -1,8 +1,6 @@
 """The Random Walker from The Nature of Code, Introduction (1.2)
 """
-
-
-from processing import Sketch
+from processing.sketch import Sketch
 
 from walker import Walker
 
