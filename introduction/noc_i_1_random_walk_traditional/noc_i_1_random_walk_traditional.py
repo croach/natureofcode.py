@@ -2,6 +2,7 @@ from processing import *
 
 from walker import Walker
 
+
 def setup():
     global walker
     size(640, 360)
@@ -11,6 +12,6 @@ def setup():
 
 def draw():
     walker.step()
-    point(walker.x, walker.y)
+    walker.render()
 
 run()
