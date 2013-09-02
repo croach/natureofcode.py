@@ -3,11 +3,10 @@ from random import randint
 from processing import *
 
 
-random_counts = [0]*20
-
 def setup():
     global random_counts
     size(800, 200)
+    random_counts = [0]*20
 
 def draw():
     background(255)
