@@ -1,19 +1,12 @@
-from random import choice, randint
+from random import choice
 
 from processing import *
 
 
 class Walker(object):
-    def __init__(self, width, height):
-        # self.width = width
-        # self.height = height
+    def __init__(self):
         self.x = width/2
         self.y = height/2
-        self.color = [randint(0, 255), randint(0, 255), randint(0, 255)]
-
-    @property
-    def position(self):
-        return {'x': self.x, 'y': self.y}
 
     def step(self):
         direction = choice(['left', 'right', 'forward', 'backward'])

@@ -5,10 +5,9 @@ from walker import Walker
 
 def setup():
     global walker
-    size(640, 360)
+    size(800, 200)
     background(255)
-    fill(0)
-    walker = Walker(width, height)
+    walker = Walker()
 
 def draw():
     walker.step()

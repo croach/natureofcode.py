@@ -4,8 +4,8 @@ from walker import Walker
 
 
 class RandomWalker(Sketch):
-    width = 640
-    height = 360
+    width = 800
+    height = 200
 
     def setup(self):
         self.walker = Walker(self)
