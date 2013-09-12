@@ -3,7 +3,7 @@
 
 from random import choice
 
-from processing.utils import constrain
+from processing.mathfuncs import constrain
 
 
 class Walker(object):

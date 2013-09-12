@@ -1,7 +1,7 @@
 """The Random Walker from The Nature of Code, Introduction
 """
 
-from processing.utils import constrain, random
+from processing.mathfuncs import constrain, random
 
 
 class Walker(object):
