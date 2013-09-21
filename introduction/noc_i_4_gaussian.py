@@ -15,7 +15,6 @@ def draw():
 
     noStroke()
     fill(0, 10)
-    # rect(xloc, height/2, 16, 16);
     ellipse(xloc, height/2, 16, 16)
 
 run()
