@@ -18,7 +18,7 @@ def draw():
     stroke(255)
 
     normalization = False
-    maxy = 0.0
+    maxy = 0
 
     # Draw graph based on values in norms array
     # If a value is greater than the height, set normalization to true
@@ -31,7 +31,7 @@ def draw():
     # Otherwise, just copy the info
     for x in xrange(len(vals)):
         if normalization:
-            norms[x] = (vals[x] / maxy) * height
+            norms[x] = (vals[x] / float(maxy)) * height
         else:
             norms[x] = vals[x]
 
