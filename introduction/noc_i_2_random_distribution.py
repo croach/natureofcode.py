@@ -9,6 +9,7 @@ def setup():
     random_counts = [0]*20
 
 def draw():
+    global random_counts
     background(255)
 
     # Pick a number and increase its count
