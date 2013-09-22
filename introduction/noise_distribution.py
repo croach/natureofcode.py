@@ -1,18 +1,12 @@
 from processing import *
 
 
-size(300, 200)
-xoff = 0.0
-vals = [0] * width
-norms = [0] * width
-
-
-# def setup():
-#     global vals, norms
-#     size(300, 200)
-#     vals = [0] * width
-#     norms = [0] * width
-
+def setup():
+    global vals, norms, xoff
+    size(300, 200)
+    xoff = 0.0
+    vals = [0] * width
+    norms = [0] * width
 
 def draw():
     global xoff, vals, norms
