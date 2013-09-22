@@ -1,7 +1,7 @@
 from processing import *
 
 
-size(300, 20)
+size(300, 200)
 xoff = 0.0
 vals = [0] * width
 norms = [0] * width
