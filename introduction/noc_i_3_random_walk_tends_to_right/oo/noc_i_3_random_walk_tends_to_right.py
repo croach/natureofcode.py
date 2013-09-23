@@ -1,4 +1,5 @@
 from processing.sketch import Sketch
+from processing.server import SketchApplication
 
 from walker import Walker
 
@@ -17,5 +18,4 @@ class RandomWalker(Sketch):
 
 
 if __name__ == '__main__':
-    sketch = RandomWalker()
-    sketch.run(port=8888)
+    SketchApplication(RandomWalker, port=8888).run()
