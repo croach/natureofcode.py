@@ -2,7 +2,7 @@ from processing import *
 
 
 def setup():
-    size(323, 200)
+    size(600, 400)
     frameRate(1)
     background(200)
 
