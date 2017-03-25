@@ -18,4 +18,4 @@ class RandomWalker(Sketch):
 
 
 if __name__ == '__main__':
-    SketchApplication(RandomWalker, port=8888).run()
+    SketchApplication(RandomWalker, port=8000).run()
