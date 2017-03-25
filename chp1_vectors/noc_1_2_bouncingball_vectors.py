@@ -1,4 +1,4 @@
-from processing import *
+from p5 import *
 
 
 location = PVector(100, 100)

@@ -1,4 +1,4 @@
-from processing import *
+from p5 import *
 
 def setup():
     size(640, 360)

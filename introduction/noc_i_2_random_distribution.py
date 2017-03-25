@@ -1,6 +1,6 @@
 from random import randint
 
-from processing import *
+from p5 import *
 
 
 def setup():

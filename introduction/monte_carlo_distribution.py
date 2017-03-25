@@ -1,4 +1,4 @@
-from processing import *
+from p5 import *
 
 
 size(200, 200)

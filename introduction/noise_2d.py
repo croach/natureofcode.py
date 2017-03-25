@@ -1,4 +1,4 @@
-# from processing import *
+# from p5 import *
 
 
 # increment = 0.02
@@ -40,7 +40,7 @@
 # run()
 
 
-from processing import *
+from p5 import *
 
 increment = 0.02
 xoff = 0.0

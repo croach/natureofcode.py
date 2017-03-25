@@ -1,6 +1,6 @@
 from random import choice
 
-from processing import *
+from p5 import *
 
 
 class Walker(object):
